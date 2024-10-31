@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+/*Para eliminar los controles (flechas para aumentar o disminuir el valor) */
+
+/* Para WebKit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+* {
+    background: #d5dade;
+    font-family: "Arima", system-ui;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: hidden; /* Evita el desplazamiento */
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Con esto no se mueve el wrapper queda estatico. al momento de que salga alert. Cambiado para ocupar toda la altura de la ventana */
+    text-align: center;
+    position: relative;
+  }
+  
+  h1 {
+    color: #012D40;
+    font-style: normal;
+    margin-bottom: 50px; /* Espacio entre el título y el contenido */
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  input {
+    border: none;
+    border-bottom: 1px solid #012D40;
+    padding: 5px;
+    outline: none;
+    transition: transform 0.5s ease;
+  }
+  
+  input:hover {
+    transform: scale(1.1);
+  }
+  
+  .iqual {
+    border: none;
+    background-color: #012D40;
+    color: #ffffff;
+    border-radius: 20%;
+    cursor: pointer;
+    width: 20px;
+  }
+  
+  #result {
+    font-size: 24px;
+    color: #012D40;
+    margin-top: 50px;
+
+}
+
+
+/*SweetAlert2*/
+.my-custom-swall-title{
+    color: #0f0f0f;
+    font-family: "Arima", system-ui;
+
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.my-custom-swall-text{
+    font-family: "Arima", system-ui;
+    font-weight: 800;
+}
+
+.my-custom-button {
+    font-family: "Arima", system-ui;
+    background-color: #012D40;
+    font-weight: 600;
+    border: none;
+    border-radius: 10%;
+    width: 80px;
+    height: 50px;
+}
+
